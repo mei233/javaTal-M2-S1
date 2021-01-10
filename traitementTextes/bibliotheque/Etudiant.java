@@ -1,6 +1,9 @@
 package traitementTextes.bibliotheque;
 
 public class Etudiant extends Emprunteur {
+    /**
+     * la classe Etudiant
+     */
     private String etablissement;
 
     public Etudiant(String nom, String unversite) {
@@ -10,11 +13,17 @@ public class Etudiant extends Emprunteur {
 
     public Etudiant(String nom) {
         super(nom);
-        this.profession = "etudiant";
+        this.profession = "Etudiant";
     }
 
     public String getEtablissement() { return etablissement; }
 
     public void setEtablissement(String etablissement) { this.etablissement = etablissement; }
+
+//    polymorphisme
+//    public String getProfession() { return "Etudiant"; }
+
+
+
 
 }

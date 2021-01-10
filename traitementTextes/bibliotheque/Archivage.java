@@ -14,8 +14,6 @@ import traitementTextes.Serialisateur;
 
 public class Archivage {
 
-
-	
 	public void archiverCatalogue(HashMap<Auteur, ArrayList<Livre>> catalogue, String pathFichierArchive) {
 		
 		Serialisateur.serialiseObject(pathFichierArchive, catalogue);

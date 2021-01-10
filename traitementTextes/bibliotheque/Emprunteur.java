@@ -1,16 +1,24 @@
 package traitementTextes.bibliotheque;
-
-
-//import bibliotheques.Livre;
-
 import java.util.ArrayList;
 
+/**
+ *
+ * Classe Livre
+ *
+ *
+ * @author
+ * @version 1.2, 10 Jan 2021
+ */
 public class Emprunteur {
+    /**
+     *
+     */
     public String nom;
     protected int id;
     protected String profession;
+    protected Boolean hasDelai;
     protected ArrayList<Livre> livreEmprunte = new ArrayList<Livre>();
-
+    protected int maxLivre;
 
     public Emprunteur(String nom) {
         this.nom = nom;
@@ -39,12 +47,14 @@ public class Emprunteur {
     public void ajouteLivre(Livre l){
         this.livreEmprunte.add(l);
     }
-
-
+    public void rendrelivre(Livre l) {this.livreEmprunte.remove(l);}
     public String getProfession() { return profession; }
 
     public void setProfession(String profession) { this.profession = profession; }
 
+    public Boolean getHasDelai() { return hasDelai; }
+
+    public void setHasDelai(Boolean hasDelai) { this.hasDelai = hasDelai; }
 
     @Override
     public String toString() {

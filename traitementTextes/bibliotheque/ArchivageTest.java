@@ -57,7 +57,6 @@ class ArchivageTest {
 
 	@Test
 	void testInitialiserCatalogueAvecXml() {
-
 		// GIVEN
 //		String pathFichierXml = "C:\\Users\\33616\\Documents\\Boulot\\javacours\\javacoursTALCode\\src\\traitementTextes\\bibliotheque\\bibliotheque.xml";
 		String pathFichierXml = "/Users/meg/Desktop/java_S3/javaCoursIM/src/traitementTextes/bibliotheque/bibliotheque.xml";

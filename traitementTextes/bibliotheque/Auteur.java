@@ -2,10 +2,18 @@ package traitementTextes.bibliotheque;
 
 import java.io.Serializable;
 
-public class Auteur implements Serializable {
+/**
+ *
+ * Classe Auteur
+ *
+ *
+ * @author
+ * @version 1.2, 10 Jan 2021
+ */
 
+public class Auteur implements Serializable {
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 	private String nom;
